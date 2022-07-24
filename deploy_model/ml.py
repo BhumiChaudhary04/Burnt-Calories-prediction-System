@@ -79,34 +79,7 @@ print(test_data_prediction)
 mae = metrics.mean_absolute_error(Y_test, test_data_prediction)
 print("Mean Absolute Error = ", mae)
 
-# a = int(input("Gender 0 for male and 1 for female : "))
-# b = int(input("Age : "))
-# c = float(input("Height : "))
-# d = float(input("Weight : "))
-# e = float(input("Duration of Exercise : "))
-# f = float(input("Heart Rate after Exercise : "))
-# g = float(input("Body Temperature after Exercise : "))
 
-# input_data = (a,b,c,d,e,f,g)
-
-# # changing input_data to a numpy array
-# input_data_as_numpy_array = np.asarray(input_data)
-
-# # reshape the array
-# input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
-# print(input_data_reshaped)
-
-# input_data_reshaped=pd.DataFrame(input_data_reshaped)
-# print(input_data_reshaped)
-
-# input_data_reshaped.columns=['Gender','Age','Height','Weight','Duration','Heart_Rate','Body_Temp']
-
-# print(input_data_reshaped)
-
-# prediction = model.predict(input_data_reshaped)
-# print(prediction)
-
-# print('The no. of Burnt Calories during exercise is :  ', prediction[0])
 
 pickle.dump(model, open("ml.sav", "wb"))
 
